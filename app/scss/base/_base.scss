@@ -9,8 +9,11 @@ html {
   box-sizing: inherit;
 }
 
-// Mandatory select styling.
-::selection {
+body{
   color: map-get($color, bright);
   background: map-get($color, accent1);
 }
+
+
+
+
