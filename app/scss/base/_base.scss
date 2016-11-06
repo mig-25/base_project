@@ -1,14 +1,17 @@
-// Modern border-box applied everywhere.
+
+//Modern border-box applied everywhere.
 html {
   box-sizing: border-box;
 }
 
+// inherit box-sizing
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
+// set upp body color
 body{
   color: map-get($color, bright);
   background: map-get($color, accent1);

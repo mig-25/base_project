@@ -12,6 +12,7 @@ var notify = require('gulp-notify');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+var sassdoc = require('sassdoc');
 
 
 
@@ -78,6 +79,15 @@ gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'))
 })
+
+//Sass documentation
+gulp.task('sassdoc', function () {
+  return gulp
+    .src('app/scss/**/*.scss')
+    .pipe(sassdoc())
+    .resume();
+});
+
 
 // Cleaning 
 gulp.task('clean', function() {
