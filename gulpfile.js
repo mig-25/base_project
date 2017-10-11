@@ -29,9 +29,7 @@ gulp.task('browserSync', function() {
 
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
-    .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('app/css')) // Outputs it in the css folder
     
     .pipe(browserSync.reload({ // Reloading with Browser Sync
