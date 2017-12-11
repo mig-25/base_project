@@ -1,5 +1,3 @@
-# Gulp Starter for CSS Tricks Tutorial  
+# Gulp Starter 
 
-This repo is a gulp starter for this CSS Tricks tutorial. 
-
-Remember to do run the `npm install` command after cloning this repo :) 
+Remember to run the `npm install` command after cloning this repo :) # base_project
