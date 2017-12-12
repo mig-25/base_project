@@ -101,7 +101,7 @@ gulp.task('clean:dist', function() {
 gulp.task('louis', function() {
   louis({
     timeout: 60,
-    url: 'http://localhost:3000',
+    url: 'http://localhost:3004',
     performanceBudget: {
       requests: 10,
       headersSize: 80,
